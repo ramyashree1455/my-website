@@ -34,17 +34,10 @@ body {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
     padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-}
-
-.navbar {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative;
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -52,9 +45,15 @@ body {
     font-size: 2rem;
     font-weight: 600;
     color: var(--primary);
+    margin: 0;
+    text-align: center;
 }
 
 .nav-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 0.95rem;
 }
 
@@ -222,18 +221,22 @@ button:disabled {
     padding: 80px 40px;
     border-radius: 25px;
     text-align: center;
-    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
-    color: white;
+    background: #ffffff;
+    border: 1px solid rgba(16, 185, 129, 0.16);
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+    color: #0f172a;
 }
 
 .hero h2 {
     font-size: 2.8rem;
     font-weight: 700;
+    color: #0f172a;
 }
 
 .hero p {
     margin-top: 15px;
-    opacity: 0.9;
+    color: #334155;
+    opacity: 1;
 }
 
 /* Categories */
